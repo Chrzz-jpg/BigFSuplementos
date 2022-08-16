@@ -11,3 +11,6 @@ def categorias(request):
 
 def produtos(request):
     return render(request, 'produtos.html')
+
+def contato(request):
+    return render(request, 'contato.html')
