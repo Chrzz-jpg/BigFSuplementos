@@ -9,7 +9,7 @@ def usuarios (request):
 def categorias(request):
     return render(request, 'categorias.html')
 
-def produtos(request):
+def produto(request):
     return render(request, 'produtos.html')
 
 def contato(request):
