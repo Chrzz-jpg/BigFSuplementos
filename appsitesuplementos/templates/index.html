@@ -24,10 +24,10 @@
             </tr>
         </thead>
         <tbody>
-        {% for produtos in produtos %}
+        {% for produto in produto %}
             <tr>
-                <td><a href="{% url 'produto' produto.id %}">{{ produtos.nome }}</a></td>
-                <td>{{ produtos.preco }}</td>
+                <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
+                <td>{{ produto.preco }}</td>
             </tr>
         {% endfor %}
         </tbody>
