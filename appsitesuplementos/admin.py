@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Produto, Cliente, Categoria
 
 class ProdutoAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'preco', 'estoque', 'categoria', 'descricao')
+    list_display = ('nome', 'preco', 'estoque', 'categoria', 'descricao', 'slug')
 
 class ClienteAdmin(admin.ModelAdmin):
     list_display = ('nome', 'sobrenome', 'email', 'cpf')
