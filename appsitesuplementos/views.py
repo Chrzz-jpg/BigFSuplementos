@@ -14,3 +14,6 @@ def produto(request):
 
 def contato(request):
     return render(request, 'contato.html')
+
+def cart(request):
+    return render(request, 'cart.html')
