@@ -1,7 +1,6 @@
-from django.contrib import admin
 from django.urls import path
 from . import views
-from .views import index, contato
+from .views import cart, contato
 
 urlpatterns = [
     path('', views.index),
@@ -9,4 +8,5 @@ urlpatterns = [
     path('categorias/', views.categorias),
     path('usuarios/', views.usuarios),
     path('contato/', contato),
+    path('cart/', cart),
 ]
