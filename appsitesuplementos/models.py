@@ -1,6 +1,7 @@
 from django.db import models
 
 from django.db import models
+from stdimage.models import StdImageField
 
 class Produto(models.Model):
     nome = models.CharField('Nome', max_length=100)
@@ -8,6 +9,8 @@ class Produto(models.Model):
     estoque = models.IntegerField('Quantidade em estoque')
     categoria = models.CharField('Categoria', max_length=50)
     descricao = models.CharField('Descrição do produto', max_length=500)
+    imagem = StdImageField('Imagem', upload_to='produtos', variations={'thumb': (124, 124)}, null=True, blank=True)
+    slug = models.SlugField('Slug', max_length=100, blank=True, editable=False)
 
 
 class Cliente(models.Model):
