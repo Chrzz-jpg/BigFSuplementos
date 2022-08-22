@@ -21,9 +21,9 @@
   </head>
   <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 10px;" >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="/">BigF Suplementos</a>
+        <a class="navbar-brand" href="#!">BigF Suplementos</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,12 +38,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#!"
-                >Ínicio</a
-              >
+              <a class="nav-link active" aria-current="page" href="/">Ínicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Sobre nós</a>
+              <a class="nav-link" href="about">Sobre nós</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -53,19 +51,33 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Categorias</a
-              >
+                >Categorias
+              </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#!">Popular Items</a></li>
                 <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
               </ul>
             </li>
           </ul>
+          <div class="col-4 m-1 text-center fixed-center">
+            <form method="get">
+                <input type="text" id="search" name="search"
+                       class="form-control" placeholder="Buscar ...">
+            </form>
+        </div>
+    
+          <a href="">
+            <button class="btn btn-outline-light fixed-right" type="submit">
+              <i class="bi-cart-fill me-1"></i>
+              Cart
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+          </a>
         </div>
       </div>
     </nav>
-
+    <!-- Navigation-->
+   
     <div class="container px-4 py-5 mx-auto">
       <div class="row d-flex justify-content-center">
         <div class="col-5">
