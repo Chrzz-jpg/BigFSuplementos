@@ -150,7 +150,7 @@
       style="margin-bottom: 10px"
     >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand " href="/">BigF Suplementos</a>
+        <a class="navbar-brand" href="/">BigF Suplementos</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -164,11 +164,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-          
-            <li class="nav-item">
+            <li class="nav-item disabled">
               <a class="nav-link disabled" href="about">Sobre nós</a>
             </li>
-           <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 id="navbarDropdown"
@@ -180,27 +179,36 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {% for categoria in categorias %}
-                <li><a class="dropdown-item" href="#!">{{categoria.nome}}</a></li>
+                <li>
+                  <a class="dropdown-item" href="#!">{{categoria.nome}}</a>
+                </li>
                 {% endfor %}
               </ul>
             </li>
           </ul>
-          
+
           <a href="">
             <button class="btn btn-outline-light fixed-right" type="submit">
               <i class="bi-cart-fill me-1"></i>
               Cart
-              <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart">0</span>
+              <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart"
+                >0</span
+              >
             </button>
           </a>
         </div>
       </div>
     </nav>
-    <main class="container">
+    <main class="container t-2">
       <!-- Left Column / Headphones Image -->
-      <div class="left-column">
-        <div>Imagem top do produto</div>
-        <img src="{{produto.imagem}}" width="120" />
+      <div class="col-lg-8 image" style="top: 40px">
+        <div class="col-image-container m-2">
+          <img
+            src="{{ BASE_DIR }}/{{produto.imagem}}"
+            width="450px"
+            height="450px"
+          />
+        </div>
       </div>
 
       <!-- Right Column -->
