@@ -208,10 +208,10 @@
               </ul>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0 ">
-            <input class="form-control mr-sm-2 disabled" type="search" placeholder="Search" aria-label="Search">
-          </form>
-
+            <form method="get">
+                <input type="text" id="search" name="search"
+                       class="form-control" placeholder="Buscar ...">
+            </form>
           <a href="">
             <button class="btn btn-outline-light fixed-right" type="submit">
               <i class="bi-cart-fill me-1"></i>
@@ -319,9 +319,7 @@
             >Voltar</a
           >
         </li>
-        <li class="page-item disabled">
-          <a class="page-link " href="#">{{produtos.number}}</a>
-        </li>
+     
         {% endif %} 
         {% if produtos.has_next %}
         <li class="page-item">
